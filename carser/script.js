@@ -20,12 +20,11 @@ const point = document.getElementById("point")
 // point.style.top = '15px';
 // point.style.left = '150px';
 
-document.addEventListener("mousemove",(e) => {
-    point.style.position = "absolute"
-    point.style.top = e.pageY - 25 + "px"
-    point.style.left = e.pageX - 25 + "px" 
-    // console.log(e.pageX)
-    // console.log(e.pageY)
-    // console.log(e.pageX + "px") 
-    // console.log(e.pageY + "px") 
+
+document.addEventListener("mousemove", (e) => {
+    setTimeout(function () {
+        point.style.position = "absolute"
+        point.style.top = e.pageY - 30 + "px"
+        point.style.left = e.pageX - 30 + "px"
+    }, 150)
 })

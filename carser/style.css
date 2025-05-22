@@ -1,13 +1,37 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
+    width: 100%;
+    height: 100%;
     background-color: black;
+    overflow: hidden ;
 }
 #point{
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: rgb(54, 88, 184);
     border-radius: 50px;
+    position: absolute;
+    animation: colorchanging 3s linear infinite;
+}
+#point::after{
+    content: '';
+    inset: -10px;
+    background-color: rgb(54, 88, 184);
+    position: absolute;
+    border-radius: 50%;
+    opacity: .8;
+    filter: blur(10px);
+}
+@keyframes colorchanging {
+    0%{
+        filter: hue-rotate(45deg);
+    }
+    100%{
+        filte: hue-rotate(360deg);
+    }
+    
 }
