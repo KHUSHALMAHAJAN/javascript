@@ -1,4 +1,7 @@
 const point = document.getElementById("point")
+const logo = document.getElementById("logo")
+const firstcontener = document.getElementById("firstcontener")
+const discription = document.getElementById("discription")
 // point.style.top = event.
 // point.style.left = "150px"
 // const rect = point.getBoundingClientRect()
@@ -27,4 +30,10 @@ document.addEventListener("mousemove", (e) => {
         point.style.top = e.pageY - 30 + "px"
         point.style.left = e.pageX - 30 + "px"
     }, 150)
+})
+firstcontener.addEventListener("mouseover", function () {
+    description.style.display = "block";
+});
+firstcontener.addEventListener("mouseleave", function () {
+    description.style.display = "none";
 })
