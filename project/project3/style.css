@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#player{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(34, 33, 33);
+}
+#left{
+   width: 40%;
+   height: 80%;
+   /* background-color: aliceblue; */
+   margin-top: 40px;
+   background-image: url(https://imgs.search.brave.com/VVGIg8OhsAWK8f2etXhfHrd3Ef6qcSamwVB4uBCDtXI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWMu/YnN0YXJzdGF0aWMu/Y29tL3VnYy82YmNi/NTNiYzdiMzAyNDUx/MTg3NDdlMDE0ODQy/YWI3Ni5qcGdAMzIw/d18xODBoXzFlXzFj/XzkwcQ);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   /* background-attachment: fixed; */
+}
+#right{
+    width: 40%;
+    height: 80%;
+    background-color: rgb(44, 42, 40);
+    margin-top: 40px;
+}
+#right h3{
+    font-size: 35px;
+    margin: 20px;
+    margin-left: 40px;
+    color: white;
+}
+#all-song{
+    color: white;
+}
+.song{
+    display: flex;
+    margin: 10px 0; 
+    border-top: 2px solid white;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.song img{
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+.song h2{
+    font-size: 30px;
+}
+#all-song .song:last-child {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    /* background-color: antiquewhite; */
+}
+
+.temp{
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#player{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    gap: 35px;
+}
+#player h3{
+    background-color: rgb(110, 108, 104);
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
